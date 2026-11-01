@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Universal URL Copy Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4 space-y-4 text-body">
+  <h1 class="text-headline">Settings</h1>
+  <label class="flex items-center gap-1">
+    <input type="checkbox" id="defaultMode">
+    <span>Copy right away (don't ask)</span>
+  </label>
+  <label class="flex items-center gap-1">
+    <span>What to copy</span>
+    <select id="outputType" class="m-1" aria-describedby="outputHelp">
+      <option value="title-url">Copy title and URL</option>
+      <option value="url-only">Copy URL only</option>
+    </select>
+  </label>
+  <p id="outputHelp">This choice is used when "Copy right away" is on.</p>
+  <p id="saveStatus" role="status" aria-live="polite"></p>
+  <script src="options.js"></script>
+</body>
+</html>

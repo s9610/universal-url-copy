@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: local("Century Gothic"), local("CenturyGothic");
+  font-display: swap;
+}
+html {
+  font-family: "Century Gothic", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--c-bg);
+  color: var(--c-fg);
+}
+:root {
+  --type-display-lg: 57px/64px -0.5%;
+  --type-headline-md: 32px/40px 0%;
+  --type-body: 16px/24px 0%;
+  --c-bg: #F9FAFB;
+  --c-fg: #0F172A;
+  --c-primary: #2563EB;
+  --c-secondary: #14B8A6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #0F172A;
+    --c-fg: #F9FAFB;
+    --c-primary: #3B82F6;
+    --c-secondary: #2DD4BF;
+  }
+}
+body { margin: 0; }
+/* Utility classes */
+.p-1 { padding:4px; }
+.p-2 { padding:8px; }
+.p-3 { padding:12px; }
+.p-4 { padding:16px; }
+.m-1 { margin:4px; }
+.m-2 { margin:8px; }
+.mt-4 { margin-top:16px; }
+.space-y-4 > * + * { margin-top:16px; }
+.flex { display:flex; }
+.items-center { align-items:center; }
+.gap-1 { gap:4px; }
+.gap-2 { gap:8px; }
+.rounded { border-radius:8px; }
+.text-headline { font: var(--type-headline-md); }
+.text-body { font: var(--type-body); }
+.text-primary { color: var(--c-primary); }
+.max-w-popup { width:320px; max-width:600px; }
+.max-h-popup { max-height:800px; }
+
